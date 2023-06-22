@@ -1,0 +1,44 @@
+.bt-atendimento {
+  background: var(--verde);
+  color: var(--branco);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.bt-atendimento::before {
+  content: url('../img/icone-balao-questao.svg');
+  width: 3rem;
+}
+.dialog-modal-atendimento {
+  width: 65rem;
+}
+.dialog-modal-atendimento .titulo {
+  font-size: 2.5rem;
+}
+.dialog-modal-atendimento .bt-social {
+  padding: 3rem 2rem;
+  width: 100%;
+}
+.dialog-modal-atendimento .bt-social span {
+  display: block;
+  text-align: center;
+}
+.dialog-modal-atendimento .bt-social .bt-titulo {
+  font-family: 'sink-bold';
+  font-size: 1.4rem;
+}
+.dialog-modal-atendimento .bt-social .bt-subtitulo {
+  font-family: 'sink-sbold';
+  font-size: 1rem;
+}
+.dialog-modal-atendimento .bt-social .bt-titulo-icone {
+  font-family: 'sink-bold';
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dialog-modal-atendimento .bt-social .bt-titulo-icone::before {
+  content: url('../img/icone-whatsapp.svg');
+  width: 4rem;
+}

@@ -1,0 +1,164 @@
+.institucional-detalhes-curso .topo {
+  background: var(--cinza-claro);
+}
+.institucional-detalhes-curso .conteudos-topo {
+  display: grid;
+  grid-template-columns: 1fr 30rem;
+  gap: 5rem;
+}
+.institucional-detalhes-curso .topo .titulo {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.institucional-detalhes-curso .topo .titulo-grande {
+  font-size: 3em;
+  color: var(--preto);
+  margin-bottom: 1rem;
+}
+.institucional-detalhes-curso .topo .lista-tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+.institucional-detalhes-curso .topo .informacoes {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.institucional-detalhes-curso .topo .informacao {
+  display: flex;
+  gap: 1rem;
+  max-width: 30%;
+}
+.institucional-detalhes-curso .topo .informacao .icone {
+  height: 2.5rem;
+}
+.institucional-detalhes-curso .topo .informacao span {
+  color: var(--cinza-escuro);
+  font-family: 'sink-regular';
+  display: block;
+  font-size: 1.1rem;
+}
+.institucional-detalhes-curso .topo .informacao span.titulo-informacao {
+  font-family: 'sink-sbold';
+}
+.institucional-detalhes-curso .topo .container-cartao {
+  width: 100%;
+  position: relative;
+}
+.institucional-detalhes-curso .topo .cartao-detalhe-curso {
+  background: var(--branco);
+  position: absolute;
+  width: 100%;
+  right: 0;
+  top: 0;
+  box-shadow: var(--sombra);
+}
+.institucional-detalhes-curso .topo .cartao-detalhe-curso .informacoes-cartao {
+  padding: 2rem;
+}
+.institucional-detalhes-curso .topo .cartao-detalhe-curso h3 {
+  font-family: 'sink-black';
+  text-align: center;
+  margin-top: 1rem;
+}
+.institucional-detalhes-curso .topo .cartao-detalhe-curso span {
+  display: block;
+  text-align: center;
+  font-family: 'sink-medium';
+  color: var(--cinza-escuro);
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+.institucional-detalhes-curso .topo .cartao-detalhe-curso .bt-inscrever {
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.institucional-detalhes-curso .topo .cartao-detalhe-curso .lista-circulos {
+  display: block;
+  margin-bottom: 0;
+}
+.institucional-detalhes-curso .topo .cartao-detalhe-curso .lista-circulos li {
+  font-family: 'sink-sbold';
+}
+.institucional-detalhes-curso .conteudo .bt-ver-mais {
+  margin-bottom: 2rem;
+}
+.institucional-detalhes-curso .conteudo .certificados {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.institucional-detalhes-curso .conteudo .certificado span {
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: 'sink-sbold';
+  font-size: 1.3rem;
+  color: var(--cinza-escuro);
+}
+.institucional-detalhes-curso .conteudo .certificado img {
+  max-width: 100%;
+  box-shadow: var(--sombra);
+}
+.institucional-detalhes-curso .conteudo .sobre-certificado {
+  border-radius: var(--radius-pequeno);
+  border: 0.2rem solid var(--cinza);
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+.institucional-detalhes-curso .comentarios {
+  background: var(--degrade-verdes);
+}
+.institucional-detalhes-curso .comentarios .titulo {
+  color: var(--branco);
+}
+.institucional-detalhes-curso .comentarios .subtitulo {
+  margin-bottom: 0.5rem;
+  color: var(--branco);
+}
+.institucional-detalhes-curso .comentarios .container-comentario {
+  background: var(--branco);
+  padding: 2rem;
+  border-radius: var(--radius-medio);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1400px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+  .institucional-detalhes-curso .topo .informacoes {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .institucional-detalhes-curso .topo .informacoes .informacao {
+    max-width: unset;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .institucional-detalhes-curso .conteudos-topo {
+    grid-template-columns: 100%;
+  }
+  .institucional-detalhes-curso .conteudos-topo .conteudo-topo {
+    order: 2;
+  }
+  .institucional-detalhes-curso .conteudos-topo .container-cartao {
+    order: 1;
+  }
+  .institucional-detalhes-curso .topo .cartao-detalhe-curso {
+    position: relative;
+  }
+}
+@media (max-width: 575px) {
+  .institucional-detalhes-curso .conteudo .certificados {
+    grid-template-columns: 100%;
+  }
+}
+@media (max-width: 400px) {
+}

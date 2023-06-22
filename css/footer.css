@@ -1,0 +1,68 @@
+footer {
+  border-top: 3px solid var(--cinza);
+  padding: 4rem 0 2rem 0;
+}
+footer .logo-footer {
+  width: 5rem;
+}
+footer .menu-footer {
+  list-style: none;
+}
+footer .menu-footer h6 {
+  text-transform: uppercase;
+  color: var(--preto);
+  font-size: 1.6rem;
+  font-family: 'sink-black';
+  margin-bottom: 2rem;
+}
+footer .menu-footer .item-menu-footer a {
+  color: var(--cinza-escuro);
+  font-family: 'sink-bold';
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+}
+footer .bt-ajuda {
+  padding: 1.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  color: var(--branco);
+}
+footer .bt-ajuda h6 {
+  font-family: 'sink-black';
+  font-size: 1.3rem;
+  text-align: center;
+}
+footer .bt-ajuda span {
+  font-family: 'sink-medium';
+  font-size: 1rem;
+  text-align: center;
+}
+footer .logo-google {
+  height: 5rem;
+}
+footer .logo-abed {
+  height: 7rem;
+}
+footer .logo-gi-footer {
+  height: 4.5rem;
+}
+footer .logo-gi-footer .copyright {
+  font-family: 'sink-regular';
+  color: var(--cinza-escuro);
+  font-size: 0.8rem;
+}
+@media (max-width: 575px) {
+  footer .logo-footer {
+    width: 4rem;
+  }
+  footer .logo-gi-footer {
+    width: 3rem;
+  }
+  footer .menu-footer h6 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  footer .menu-footer .item-menu-footer a {
+    font-size: 1rem;
+  }
+}

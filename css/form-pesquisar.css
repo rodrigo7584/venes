@@ -1,0 +1,21 @@
+.form-pesquisar {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  background-color: var(--branco);
+  border-radius: var(--radius-pequeno);
+  flex-grow: 1;
+  overflow: hidden;
+}
+.form-pesquisar .bt-enviar img {
+  width: 100%;
+}
+.form-pesquisar input {
+  font-family: 'sink-medium';
+  font-size: 1.2rem;
+  padding: 1rem 0.5rem;
+  width: 100%;
+  background: transparent;
+}
+.form-pesquisar input::placeholder {
+  color: var(--cinza-escuro);
+}

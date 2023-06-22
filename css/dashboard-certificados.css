@@ -1,0 +1,129 @@
+.dashboard-certificados .certificados {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+  gap: 2rem;
+}
+.dashboard-certificados .certificados .certificado {
+  background: var(--branco);
+  box-shadow: var(--sombra);
+  padding: 1.8rem;
+  border-radius: var(--radius-pequeno);
+}
+.dashboard-certificados .certificados .certificado .titulo-certificado {
+  font-family: 'sink-bold';
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+.dashboard-certificados .certificados .certificado .carga-certificado {
+  display: block;
+  font-family: 'sink-medium';
+  font-size: 1.2rem;
+  color: var(--cinza-escuro);
+}
+.dashboard-certificados .certificados .certificado .status-certificado {
+  display: block;
+  font-family: 'sink-regular';
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.dashboard-certificados .certificados .certificado .status-certificado:before {
+  content: url(../img/icone-i-informacao.svg);
+  width: 0.4rem;
+}
+.dashboard-certificados .certificados .certificado .status-certificado.status-aprovado {
+  color: var(--verde);
+}
+.dashboard-certificados .certificados .certificado .status-certificado.status-aprovado::before {
+  filter: var(--svg-verde);
+}
+.dashboard-certificados .certificados .certificado .status-certificado.status-aguardando {
+  color: var(--laranja);
+}
+.dashboard-certificados .certificados .certificado .status-certificado.status-aguardando::before {
+  filter: var(--svg-laranja);
+}
+.dashboard-certificados .certificados .certificado .bt-emitir {
+  margin-top: 1rem;
+  border-radius: var(--radius-redondo);
+  width: 100%;
+}
+.dialog-modal-emitir-certificado {
+  width: 70rem;
+  border-radius: var(--radius-pequeno) !important;
+}
+.dialog-modal-emitir-certificado .foto-certificados {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background: var(--degrade-verdes);
+  margin-bottom: 1rem;
+}
+.dialog-modal-emitir-certificado .foto-certificados img {
+  width: 40%;
+}
+.dialog-modal-emitir-certificado .titulo-pequeno {
+  font-family: 'sink-medium';
+  margin-bottom: 0.5rem;
+}
+.dialog-modal-emitir-certificado .precos .preco-antigo {
+  font-family: 'sink-sbold';
+  font-size: 1.5rem;
+  color: var(--verde);
+  margin: 0 auto;
+  width: fit-content;
+  position: relative;
+}
+.dialog-modal-emitir-certificado .precos .preco-antigo:before {
+  content: '';
+  position: absolute;
+  width: 110%;
+  height: 0.1rem;
+  left: -5%;
+  top: 50%;
+  background: var(--verde);
+}
+.dialog-modal-emitir-certificado .precos .preco-novo {
+  font-family: 'sink-bold';
+  font-size: 3rem;
+  color: var(--preto);
+  text-align: center;
+  line-height: 1;
+}
+.dialog-modal-emitir-certificado .precos .parcelas {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+.dialog-modal-emitir-certificado .precos .tag {
+  margin: 0 auto;
+  text-align: center;
+  width: fit-content;
+  font-family: 'sink-medium';
+  font-size: 1.1rem;
+  border-radius: var(--radius-redondo);
+  background: var(--preto);
+  color: var(--amarelo);
+  margin-bottom: 1rem;
+}
+.dialog-modal-emitir-certificado .bt-emitir-certificado {
+  width: 100%;
+}
+@media (max-width: 1400px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+  .dashboard-certificados .certificados {
+    grid-template-columns: 100%;
+  }
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 575px) {
+}
+@media (max-width: 400px) {
+}

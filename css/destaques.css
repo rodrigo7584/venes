@@ -1,0 +1,28 @@
+.destaques .logo-abed {
+  height: 7rem;
+}
+.destaques .logo-governo {
+  height: 8rem;
+}
+.destaques .logo-gi {
+  height: 5rem;
+}
+.destaques p {
+  font-family: 'sink-sbold';
+  color: var(--cinza-escuro);
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+@media (max-width: 575px) {
+  .destaques p {
+    font-size: 1.3rem;
+  }
+
+  .lista-cursos .tag-curso {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+  }
+  .destaques p {
+    text-align: center;
+  }
+}

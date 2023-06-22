@@ -1,0 +1,105 @@
+.curso-emitir-certificado .titulo,
+.curso-emitir-certificado .subtitulo {
+  text-align: center;
+}
+.curso-emitir-certificado .cartoes-certificados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 3rem;
+}
+.curso-emitir-certificado .cartoes-certificados .cartao {
+  width: 30rem;
+  border-radius: var(--radius-pequeno);
+  background-color: var(--branco);
+  padding: 2rem;
+  box-shadow: var(--sombra);
+  position: relative;
+}
+.curso-emitir-certificado .cartoes-certificados .cartao .titulo-cartao {
+  text-align: center;
+  font-family: 'sink-sbold';
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.curso-emitir-certificado .cartoes-certificados .cartao.cartao-destaque:before {
+  content: 'mais procurado';
+  position: absolute;
+  left: 50%;
+  width: 70%;
+  text-align: center;
+  color: var(--branco);
+  top: -1rem;
+  transform: translateX(-50%);
+  font-family: 'sink-bold';
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  background-color: var(--verde);
+  padding: 0.5rem 2rem;
+}
+.curso-emitir-certificado .cartoes-certificados .cartao .lista-checks-v2 li::before {
+  top: 1rem;
+}
+.curso-emitir-certificado .cartoes-certificados .cartao .precos {
+  width: 100%;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.curso-emitir-certificado .cartoes-certificados .cartao .precos .preco-antigo {
+  font-family: 'sink-sbold';
+  font-size: 1.5rem;
+  color: var(--verde);
+  margin: 0 auto;
+  width: fit-content;
+  position: relative;
+}
+.curso-emitir-certificado .cartoes-certificados .cartao .precos .preco-antigo:before {
+  content: '';
+  position: absolute;
+  width: 110%;
+  height: 0.1rem;
+  left: -5%;
+  top: 50%;
+  background: var(--verde);
+}
+.curso-emitir-certificado .cartoes-certificados .cartao .precos .preco-novo {
+  font-family: 'sink-bold';
+  font-size: 3rem;
+  color: var(--preto);
+  text-align: center;
+  line-height: 1;
+}
+.curso-emitir-certificado .cartoes-certificados .cartao .precos .parcelas {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+.curso-emitir-certificado .cartoes-certificados .cartao .precos .tag-flutuante {
+  position: absolute;
+  padding: 0.3rem 1rem;
+  right: 0;
+  width: fit-content;
+  font-family: 'sink-regular';
+  font-size: 0.9rem;
+  border-radius: var(--radius-redondo);
+  background: var(--verde-claro);
+  color: var(--verde);
+  margin-bottom: 1rem;
+}
+.curso-emitir-certificado .cartoes-certificados .cartao .bt-escolher-este {
+  width: 100%;
+}
+@media (max-width: 1400px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 575px) {
+}
+@media (max-width: 400px) {
+}

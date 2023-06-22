@@ -1,0 +1,104 @@
+/*COMUM*/
+.login-cadastro .container-informacoes {
+  min-height: 100vh;
+}
+.login-cadastro .container-informacoes .titulo-grande {
+  margin-top: 10rem;
+  width: calc(100% - 13rem);
+}
+.login-cadastro .container-informacoes .subtitulo {
+  color: var(--branco);
+  width: 50rem;
+  max-width: calc(100% - 13rem);
+}
+.login-cadastro .container-informacoes .lista-icones {
+  margin-top: 10rem;
+  max-width: calc(100% - 13rem);
+}
+.login-cadastro .container-formulario {
+  min-height: 100vh;
+}
+.login-cadastro .container-formulario .conteudo-formulario {
+  margin-top: 10rem;
+  background: var(--branco);
+  box-shadow: var(--sombra);
+  padding: 3rem 2rem 5rem 2rem;
+  border-radius: var(--radius-medio);
+  margin-left: -10rem;
+  margin-bottom: 5rem;
+}
+.login-cadastro .container-formulario .conteudo-formulario span {
+  display: block;
+  text-align: end;
+  font-size: 1rem;
+  font-family: 'sink-bold';
+  color: var(--cinza-escuro);
+}
+.login-cadastro .container-formulario .conteudo-formulario span a {
+  font-size: 1rem;
+  font-family: 'sink-bold';
+}
+.login-cadastro .container-formulario .conteudo-formulario button[type='submit'] {
+  width: 100%;
+}
+/*FIM COMUN*/
+/*LOGIN*/
+.login-cadastro .container-informacoes-login {
+  background: var(--degrade-verdes);
+}
+.login-cadastro .container-formulario-login .conteudo-formulario span {
+  margin-bottom: 2rem;
+  margin-top: -1rem;
+}
+/*FIM LOGIN*/
+/*CADASTRO*/
+.login-cadastro .container-informacoes-cadastro {
+  background: var(--laranja);
+}
+.login-cadastro .container-formulario-cadastro .conteudo-formulario span {
+  width: 80%;
+  margin: 2rem auto 0 auto;
+  text-align: center;
+}
+/*FIM CADASTRO*/
+@media (max-width: 1400px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+  .login-cadastro .container-informacoes,
+  .login-cadastro .container-formulario {
+    min-height: auto;
+  }
+  .login-cadastro .container-informacoes .subtitulo,
+  .login-cadastro .container-informacoes .lista-icones {
+    display: none;
+  }
+  .login-cadastro .container-informacoes .titulo-grande {
+    text-align: center;
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .login-cadastro .container-formulario .conteudo-formulario {
+    margin: 3rem 2rem;
+  }
+  .login-cadastro .container-formulario-login {
+    background: var(--degrade-verdes);
+  }
+  .login-cadastro .container-formulario-cadastro {
+    background: var(--verde);
+  }
+  .login-cadastro .container-formulario .conteudo-formulario {
+    padding: 1rem;
+  }
+}
+@media (max-width: 575px) {
+  .login-cadastro .container-informacoes .titulo-grande {
+    margin: 3rem 0;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 400px) {
+}

@@ -1,0 +1,80 @@
+.quem-somos .topo .logos{
+  display: flex;
+  margin: 2rem 0;
+  gap: 4rem;
+  align-items: end;
+}
+.quem-somos .topo .logos .logo-gi{
+  width: 6rem;
+}
+.quem-somos .topo .logos .logo-governo{
+  width: 7rem;
+}
+.quem-somos .topo .logos .logo-abed{
+  width: 6.5rem;
+}
+.quem-somos .mais-sobre{
+  background: var(--cinza-claro);
+}
+.quem-somos .mais-sobre .titulo,
+.quem-somos .mais-sobre .subtitulo{
+text-align: center;
+}
+.quem-somos .mais-sobre .conteudos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.quem-somos .mais-sobre .conteudos .conteudo{
+  display: grid;
+  width: calc(30% - 1rem );
+  gap: 1rem;
+  grid-template-columns: 7rem 1fr;
+}
+.quem-somos .mais-sobre .conteudos .conteudo .icone{
+  width: 100%;
+}
+.quem-somos .mais-sobre .conteudos .conteudo h4{
+  font-family: 'sink-bold';
+  color: var(--preto);
+  font-size: 1.3rem;
+}
+.quem-somos .mais-sobre .conteudos .conteudo p{
+  font-family: 'sink-regular';
+  color: var(--cinza-escuro);
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+@media (max-width: 1400px) {
+ 
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+   .quem-somos .mais-sobre .conteudos .conteudo{
+    width: calc(50% - 1rem );
+  }
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 575px) {
+  .quem-somos .mais-sobre .conteudos .conteudo{
+    width: 100%;
+  }
+  .quem-somos .topo .logos{
+  justify-content: center;
+  }
+  .quem-somos .topo .logos .logo-gi{
+    width: 5rem;
+  }
+  .quem-somos .topo .logos .logo-governo{
+    width: 6rem;
+  }
+  .quem-somos .topo .logos .logo-abed{
+    width: 5.5rem;
+  }
+}
+@media (max-width: 400px) {
+} 

@@ -1,0 +1,15 @@
+.falar-outro-assunto {
+  background-color: var(--cinza-claro);
+}
+.falar-outro-assunto .titulo {
+  color: var(--preto);
+  text-align: center;
+}
+.falar-outro-assunto .subtitulo {
+  text-align: center;
+}
+.falar-outro-assunto .bt-fale-conosco {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}

@@ -1,0 +1,100 @@
+.checkout .checkout-timeline .timeline {
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  position: relative;
+  margin: 3rem 0;
+}
+.checkout .checkout-timeline .timeline .line {
+  position: absolute;
+  top: calc(50% - 1rem);
+  background-image: linear-gradient(to right, var(--verde) 0%, var(--cinza) 100%);
+  height: 0.2rem;
+  width: 100%;
+  z-index: 1;
+}
+.checkout .checkout-timeline .timeline.resumo .line {
+  background-image: linear-gradient(to right, var(--verde) 38%, var(--cinza) 0%);
+}
+.checkout .checkout-timeline .timeline.confirmar .line {
+  background-image: linear-gradient(to right, var(--verde) 63%, var(--cinza) 0%);
+}
+.checkout .checkout-timeline .timeline.pagamento .line {
+  background-image: linear-gradient(to right, var(--verde) 100%, var(--cinza) 0%);
+}
+.checkout .checkout-timeline .timeline .estagio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.checkout .checkout-timeline .timeline .estagio .indice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cinza);
+  color: var(--preto);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--radius-redondo);
+  font-family: 'sink-bold';
+  font-size: 1.3rem;
+}
+.checkout .checkout-timeline .timeline .estagio:hover .indice,
+.checkout .checkout-timeline .timeline .estagio.ativo .indice {
+  background-color: var(--verde);
+  color: var(--branco);
+}
+.checkout .checkout-timeline .timeline.resumo .estagio-resumo .indice {
+  background-color: var(--verde);
+  color: var(--branco);
+}
+.checkout .checkout-timeline .timeline.confirmar .estagio-resumo .indice {
+  background-color: var(--verde);
+  color: var(--branco);
+}
+.checkout .checkout-timeline .timeline.confirmar .estagio-confirmar .indice {
+  background-color: var(--verde);
+  color: var(--branco);
+}
+.checkout .checkout-timeline .timeline.pagamento .estagio-resumo .indice {
+  background-color: var(--verde);
+  color: var(--branco);
+}
+.checkout .checkout-timeline .timeline.pagamento .estagio-confirmar .indice {
+  background-color: var(--verde);
+  color: var(--branco);
+}
+.checkout .checkout-timeline .timeline.pagamento .estagio-pagamento .indice {
+  background-color: var(--verde);
+  color: var(--branco);
+}
+.checkout .checkout-timeline .timeline .legenda {
+  margin-top: 0.5rem;
+  font-family: 'sink-regular';
+  color: var(--preto);
+  font-size: 1.2rem;
+  display: block;
+  text-align: center;
+  line-height: 1.3;
+}
+@media (max-width: 1400px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 575px) {
+  .checkout .checkout-timeline .timeline .line {
+    top: calc(50% - 1.6rem);
+  }
+  .checkout .checkout-timeline .timeline .legenda {
+    font-size: 1rem;
+    max-width: 8rem;
+  }
+}
+@media (max-width: 400px) {
+}

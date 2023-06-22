@@ -1,0 +1,150 @@
+.institucional-certificados .topo {
+  background: var(--degrade-verdes);
+}
+.institucional-certificados .topo .container-informacoes {
+  background: var(--branco);
+  border-radius: 2rem;
+  padding: 2rem;
+}
+.institucional-certificados .topo .titulo {
+  font-size: 2.6rem;
+}
+.institucional-certificados .topo ul.lista-checks li {
+  color: var(--preto);
+}
+.institucional-certificados .sua-carreira .destaque {
+  background: var(--cinza-claro);
+  display: flex;
+  padding: 2.5rem;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.institucional-certificados .sua-carreira .destaque .icone {
+  height: 5rem;
+}
+.institucional-certificados .sua-carreira .destaque .titulo-pequeno {
+  margin-bottom: 2rem;
+  line-height: 1.3;
+}
+.institucional-certificados .validade {
+  background: var(--cinza-claro);
+}
+.institucional-certificados .validade .img-destaque {
+  border-radius: var(--radius-medio);
+}
+.institucional-certificados .validade .numeros-destaque {
+  text-align: center;
+  font-family: 'sink-black';
+  color: var(--cinza-escuro);
+  line-height: 1;
+  font-size: 5rem;
+  margin-top: 3rem;
+}
+.institucional-certificados .validade .numeros-legenda {
+  text-align: center;
+  font-family: 'sink-medium';
+  font-size: 1.5rem;
+}
+.institucional-certificados .dados-certificado h2.titulo,
+.institucional-certificados .dados-certificado h3.subtitulo {
+  text-align: center;
+}
+.institucional-certificados .dados-certificado .lista-circulos li {
+  font-family: 'sink-regular';
+}
+.institucional-certificados .dados-certificado .lista-circulos li::before {
+  background: var(--cinza-escuro);
+}
+.institucional-certificados .depoimentos {
+  background: var(--degrade-verdes);
+}
+.institucional-certificados .dados-certificado .foto-certificado {
+  box-shadow: var(--sombra);
+}
+.institucional-certificados .depoimentos .titulo,
+.institucional-certificados .depoimentos .subtitulo {
+  color: var(--branco);
+  text-align: center;
+}
+.institucional-certificados .depoimentos .lista-comentarios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.institucional-certificados .depoimentos .lista-comentarios .comentario {
+  border-radius: var(--radius-medio);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--branco);
+  padding: 2rem;
+  min-height: 25rem;
+}
+.institucional-certificados .autenticidade {
+  background: var(--cinza-claro);
+}
+.institucional-certificados .autenticidade .titulo-pequeno,
+.institucional-certificados .autenticidade .titulo,
+.institucional-certificados .autenticidade p {
+  text-align: center;
+  display: block;
+}
+.institucional-certificados .autenticidade h3.titulo-pequeno {
+  color: var(--verde);
+}
+.institucional-certificados .autenticidade form.verificar-autenticidade {
+  width: 90%;
+  margin: 2rem auto;
+  background: var(--cinza-claro);
+  display: grid;
+  grid-template-columns: 1fr 3.5rem;
+  border-radius: var(--radius-pequeno);
+  border: 0.1rem solid var(--verde);
+}
+.institucional-certificados .autenticidade form.verificar-autenticidade input {
+  background: transparent;
+  font-size: 1.6rem;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+.institucional-certificados .autenticidade form.verificar-autenticidade button {
+  padding: 0.5rem;
+}
+.institucional-certificados .autenticidade form.verificar-autenticidade button img {
+  width: 100%;
+  filter: var(--svg-cinza-escuro);
+}
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+  .institucional-certificados .validade .numeros-destaque {
+    font-size: 4rem;
+  }
+  .institucional-certificados .validade .numeros-legenda {
+    font-size: 1.2rem;
+  }
+  .institucional-certificados .depoimentos .lista-comentarios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 575px) {
+  .institucional-certificados .depoimentos .lista-comentarios {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .institucional-certificados .depoimentos .lista-comentarios .comentario {
+    min-height: 20rem;
+  }
+}
+
+@media (max-width: 400px) {
+}

@@ -1,0 +1,63 @@
+.validacao-matricula .topo {
+  background: var(--degrade-verdes);
+  padding: 5rem 0 15rem 0;
+}
+.validacao-matricula .topo .titulo-grande {
+  text-align: center;
+}
+.validacao-matricula .topo .subtitulo {
+  color: var(--branco);
+  text-align: center;
+}
+.validacao-matricula .conteudo .titulo-pequeno {
+  display: block;
+  text-align: center;
+}
+.validacao-matricula .conteudo .container-formulario {
+  background: var(--branco);
+  box-shadow: var(--sombra);
+  padding: 3rem;
+  border-radius: var(--radius-grande);
+  margin-top: -15rem;
+}
+.validacao-matricula .conteudo .container-formulario .form-validacao-matricula label {
+  font-family: 'sink-regular';
+  text-align: center;
+  display: block;
+  color: var(--cinza-escuro);
+}
+.validacao-matricula .conteudo .container-formulario button[type='submit'] {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.validacao-matricula .conteudo .container-formulario .bt-problemas {
+  text-align: center;
+}
+.validacao-matricula .conteudo .legenda {
+  display: block;
+  text-align: center;
+  color: var(--cinza-escuro);
+  font-size: 1rem;
+  font-family: 'sink-regular';
+}
+@media (max-width: 1400px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+  .validacao-matricula .topo {
+    background: var(--degrade-verdes);
+    padding: 3rem 0 0rem 0;
+  }
+  .validacao-matricula .conteudo .container-formulario {
+    background-color: var(--cinza-claro);
+    margin-top: 0rem;
+    box-shadow: unset;
+  }
+}
+@media (max-width: 575px) {
+}
+@media (max-width: 400px) {
+}

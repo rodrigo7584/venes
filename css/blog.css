@@ -1,0 +1,158 @@
+.blog .topo {
+  background: var(--degrade-verdes);
+}
+.blog .topo .titulo-grande,
+.blog .topo .subtitulo {
+  color: var(--branco);
+}
+.blog .topo .titulo-grande {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.blog .topo .titulo-grande span {
+  color: var(--preto);
+}
+.blog .topo .form-buscar-blog {
+  display: grid;
+  grid-template-columns: 1fr 3.5rem;
+  background-color: rgba(80, 80, 80, 0.5);
+
+  border-radius: var(--radius-pequeno);
+  overflow: hidden;
+}
+.blog .topo .form-buscar-blog button[type='submit'] img {
+  width: 100%;
+  filter: var(--svg-branco);
+}
+.blog .topo .form-buscar-blog input {
+  font-family: 'sink-medium';
+  font-size: 1.2rem;
+  padding: 1rem 0.5rem;
+  width: 100%;
+  color: var(--branco);
+  background: transparent;
+}
+.blog .destaques .titulo-grande {
+  color: var(--verde);
+}
+.blog .destaques .cartoes {
+  display: flex;
+  gap: 3rem;
+}
+.blog .destaques .cartoes .cartao {
+  border-radius: var(--radius-medio);
+  overflow: hidden;
+  background: var(--verde);
+}
+.blog .destaques .cartoes .cartao .thumb {
+  max-width: 100%;
+  height: 20rem;
+  overflow: hidden;
+  display: block;
+}
+.blog .destaques .cartoes .cartao .thumb img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+.blog .destaques .cartoes .cartao .informacao {
+  padding: 1.5rem;
+}
+.blog .destaques .cartoes .cartao .informacao .titulo-pequeno {
+  font-family: 'sink-sbold';
+  color: var(--branco);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+.blog .destaques .cartoes .cartao .informacao .bt-mais {
+  font-family: 'sink-sbold';
+  font-size: 1.3rem;
+  color: var(--branco);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.blog .destaques .cartoes .cartao .informacao .bt-mais::after {
+  content: url('../img/icone-setas-duplas.svg');
+  filter: var(--svg-branco);
+  width: 1rem;
+}
+.blog .destaques .bt-ver-postagens {
+  display: block;
+  width: fit-content;
+  margin: 2rem auto;
+}
+
+.blog .faca-curso {
+  background: var(--cinza-claro);
+}
+.blog .faca-curso .titulo-grande {
+  color: var(--verde);
+}
+.blog .faca-curso .nuvem-cursos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.blog .faca-curso .nuvem-cursos .tag-curso {
+  background: var(--verde);
+  border-radius: var(--radius-redondo);
+  padding: 0.5rem 1rem;
+  text-align: center;
+  color: var(--branco);
+  font-family: 'sink-medium';
+  font-size: 1.1rem;
+}
+.blog .faca-curso .bt-ver-todos-curso {
+  width: fit-content;
+}
+.blog .faca-curso .logos {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0;
+  gap: 4rem;
+  align-items: end;
+}
+
+.blog .faca-curso .logo-gi {
+  width: 7rem;
+}
+.blog .faca-curso .logo-governo {
+  width: 8.5rem;
+}
+.blog .faca-curso .logo-abed {
+  width: 7.5rem;
+}
+@media (max-width: 1400px) {
+}
+@media (max-width: 1199px) {
+  .blog .topo .titulo-grande {
+    font-size: 3.8rem;
+  }
+}
+@media (max-width: 991px) {
+  .blog .topo .titulo-grande {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 767px) {
+  .blog .destaques .cartoes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .blog .destaques .cartoes .cartao {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .blog .faca-curso .nuvem-cursos {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 400px) {
+}

@@ -1,0 +1,29 @@
+.newsletter {
+  background: var(--cinza-claro);
+}
+.newsletter .titulo-grande {
+  font-family: 'sink-sbold';
+  color: var(--verde);
+}
+.newsletter .texto-destaque {
+  display: block;
+  font-family: 'sink-medium';
+  color: var(--verde);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+@media (max-width: 1400px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 575px) {
+  .newsletter .titulo-grande {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 400px) {
+}

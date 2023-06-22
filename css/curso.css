@@ -1,0 +1,313 @@
+.curso .topo {
+  background-color: var(--cinza-claro);
+}
+.curso .topo .titulo {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.curso .topo .titulo-grande {
+  color: var(--preto);
+}
+.curso .topo .bt-progresso {
+  color: var(--verde);
+  font-family: 'sink-sbold';
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.curso .topo .bt-progresso::after {
+  content: url(../img/icone-seta.svg);
+  width: 1.5rem;
+  filter: var(--svg-verde);
+}
+.curso .topo .bt-progresso.ativo::after {
+  transform: rotate(-180deg);
+}
+.curso .topo .container-progresso {
+  transition: 0.5s;
+  overflow: hidden;
+  height: 0;
+}
+.curso .topo .container-progresso .passo {
+  display: flex;
+}
+.curso .topo .container-progresso .passo .barra-progresso {
+  width: 3rem;
+  position: relative;
+}
+.curso .topo .container-progresso .passo .barra-progresso .barra {
+  position: absolute;
+  height: 100%;
+  width: 0.2rem;
+  left: 50%;
+  transform: translate(-50%);
+  background: var(--cinza-escuro);
+}
+.curso .topo .container-progresso .passo .barra-progresso .circulo {
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  border: 0.2rem solid var(--cinza-escuro);
+  border-radius: var(--radius-redondo);
+  background-color: var(--branco);
+  left: 50%;
+  transform: translate(-50%);
+}
+.curso .topo .container-progresso .passo.concluido .barra-progresso .barra {
+  background: var(--verde);
+}
+.curso .topo .container-progresso .passo.concluido .barra-progresso .circulo {
+  border: 0.2rem solid var(--verde);
+}
+.curso .topo .container-progresso .passo .informacao {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+.curso .topo .container-progresso .passo .informacao .titulo-progresso {
+  font-family: 'sink-black';
+  font-size: 1.3rem;
+}
+.curso .container-menu-curso {
+  background-color: var(--cinza-claro);
+}
+.curso .container-menu-curso .menu-curso {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  list-style: none;
+}
+.curso .container-menu-curso .menu-curso .item-menu-curso {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--cinza-escuro);
+  font-family: 'sink-medium';
+  font-size: 1.2rem;
+  padding: 1.5rem 0;
+}
+.curso .container-menu-curso .menu-curso .item-menu-curso.ativo,
+.curso .container-menu-curso .menu-curso .item-menu-curso:hover {
+  padding-bottom: 1.3rem;
+  border-bottom: 0.2rem solid var(--verde);
+  color: var(--verde);
+}
+.curso .container-menu-curso .menu-curso .item-menu-curso.ativo .icone,
+.curso .container-menu-curso .menu-curso .item-menu-curso:hover .icone {
+  filter: var(--svg-verde);
+}
+.curso .container-menu-curso .menu-curso .item-menu-curso .icone {
+  height: 2rem;
+}
+.curso .container-menu-curso .menu-curso .item-menu-curso p {
+  display: none;
+}
+.curso .conteudo-curso {
+  display: none;
+  padding: 2rem 1rem;
+}
+.curso .conteudo-curso.ativo {
+  display: block;
+}
+.curso .conteudo-curso .titulo {
+  font-size: 1.8rem;
+  font-family: 'sink-bold';
+  color: var(--preto);
+}
+.curso .conteudo-curso .subtitulo {
+  font-family: 'sink-bold';
+  color: var(--preto);
+  margin-bottom: 1rem;
+}
+.curso .conteudo-curso .bloco {
+  padding: 2rem;
+  border-radius: var(--radius-medio);
+  border: 0.1rem solid var(--cinza);
+  margin-bottom: 2rem;
+}
+.curso .conteudo-informacoes .bloco-certificado .icone-lista {
+  width: 15rem;
+}
+.curso .conteudo-informacoes .bloco-sobre .linha {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
+.curso .conteudo-materiais .bloco-livro .topo-bloco-livro {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.curso .conteudo-materiais .bloco-livro .topo-bloco-livro .icone {
+  width: 6rem;
+}
+.curso .conteudo-materiais .bloco-livro .bts {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+}
+.curso .conteudo-materiais .bloco-livro .bts button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  justify-content: center;
+  font-family: 'sink-regular';
+  font-size: 1.2rem;
+  color: var(--laranja);
+  padding: 0.5rem;
+}
+.curso .conteudo-materiais .bloco-livro .bts button .icone {
+  width: 2rem;
+  filter: var(--svg-laranja);
+}
+.curso .conteudo-videoaulas .modulos {
+  border: 0.1rem solid var(--cinza);
+  border-radius: var(--radius-pequeno);
+  overflow: hidden;
+}
+.curso .conteudo-videoaulas .modulo {
+  border-bottom: 0.1rem solid var(--cinza);
+}
+.curso .conteudo-videoaulas .modulos .modulo-titulo {
+  font-size: 1.3rem;
+  font-family: 'sink-bold';
+  margin-bottom: 0;
+}
+.curso .conteudo-videoaulas .modulos .modulo-titulo span {
+  font-family: 'sink-regular';
+}
+.curso .conteudo-videoaulas .modulos .modulo-head {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  justify-content: space-between;
+  display: flex;
+}
+.curso .conteudo-videoaulas .modulos .modulo-head.ativo,
+.curso .conteudo-videoaulas .modulos .modulo-head:hover {
+  background: var(--verde-claro);
+  transform: scale(1);
+}
+.curso .conteudo-videoaulas .modulos .modulo-head::after {
+  content: url(../img/icone-seta.svg);
+  width: 1.5rem;
+  filter: var(--svg-preto);
+}
+.curso .conteudo-videoaulas .modulos .modulo-head.ativo::after {
+  filter: var(--svg-verde);
+  transform: rotate(-180deg);
+}
+.curso .conteudo-videoaulas .modulos .container-modulo-conteudo {
+  transition: 0.5s;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 26% 1fr;
+  gap: 1rem;
+  padding: 0rem;
+  background: var(--cinza-claro);
+}
+
+.curso .conteudo-videoaulas .modulos .modulo-conteudo .modulo-titulo {
+  margin-bottom: 1rem;
+}
+.curso .conteudo-videoaulas .modulos .modulo-conteudo .modulo-descricao {
+  line-height: 1.3;
+  font-size: 1.2rem;
+}
+.curso .conteudo-videoaulas .modulos .modulo-conteudo .duracao {
+  display: flex;
+  gap: 0.5rem;
+  font-family: 'sink-regular';
+  font-size: 1rem;
+  align-items: center;
+  color: var(--cinza-escuro);
+}
+.curso .conteudo-videoaulas .modulos .modulo-conteudo .duracao:before {
+  content: url('../img/icone-play-v2.svg');
+  width: 2rem;
+  height: 2rem;
+}
+.dialog-modal-avaliacao {
+  width: 70rem;
+}
+.dialog-modal-avaliacao .bt-enviar-resposta {
+  display: block;
+  margin-left: auto;
+}
+
+.dialog-modal-resultado-avaliacao {
+  width: 80rem;
+  text-align: center;
+}
+.dialog-modal-resultado-avaliacao .titulo {
+  font-size: 2rem;
+}
+.dialog-modal-resultado-avaliacao .icone {
+  width: 12rem;
+  margin: 4rem;
+}
+.dialog-modal-resultado-avaliacao .bts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.dialog-modal-resultado-avaliacao .bt-cinza {
+  border-radius: var(--radius-redondo);
+}
+@media (max-width: 1400px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+  .curso .container-menu-curso .menu-curso {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  .curso .container-menu-curso .menu-curso li {
+    width: 100%;
+  }
+  .curso .container-menu-curso .menu-curso .item-menu-curso {
+    flex-direction: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    border: 0.2rem solid var(--cinza-claro);
+    padding: 2rem;
+    border-radius: var(--radius-medio);
+    box-shadow: var(--sombra);
+    font-size: 1.6rem;
+  }
+  .curso .container-menu-curso .menu-curso .item-menu-curso.ativo,
+  .curso .container-menu-curso .menu-curso .item-menu-curso:hover {
+    border: 0.2rem solid var(--amarelo);
+  }
+  .curso .container-menu-curso .menu-curso .item-menu-curso p {
+    text-align: left;
+    display: block;
+    width: 100%;
+  }
+  .curso .conteudo-materiais .bloco-livro .bts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .curso .conteudo-materiais .bloco-livro .bts .bt-email {
+    order: 3;
+    grid-column: 1/3;
+    width: 100%;
+  }
+  .curso .conteudo-videoaulas .modulos .container-modulo-conteudo {
+    grid-template-columns: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .dialog-modal-avaliacao {
+    width: 98%;
+  }
+}
+@media (max-width: 400px) {
+}

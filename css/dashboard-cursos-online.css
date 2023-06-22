@@ -1,0 +1,35 @@
+.dashboard-cursos-online .titulo{
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.dashboard-cursos-online .subtitulo{
+  font-size: 1.2rem;
+  text-align: center;
+}
+.dashboard-cursos-online .nuvem-cursos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.dashboard-cursos-online .nuvem-cursos .tag-curso{
+  border-radius: var(--radius-redondo);
+  border: 0.1rem solid var(--cinza-escuro);
+  padding: 1rem 1.5rem;
+  font-family: 'sink-regular';
+  font-size: 1.3rem;
+  color: var(--cinza-escuro);
+  text-align: center;
+}
+.dashboard-cursos-online .bt-ver-todos{
+  font-family: 'sink-regular';
+  margin-top: 3rem;
+  text-transform: uppercase;
+}
+@media (max-width: 575px) {
+.dashboard-cursos-online .nuvem-cursos .tag-curso {
+  border-radius: var(--radius-redondo);
+  border: 0.1rem solid var(--cinza-escuro);
+  padding: 0.5rem 1rem;
+}
+}

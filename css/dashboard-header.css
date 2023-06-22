@@ -1,0 +1,115 @@
+.dashboard-header .topo {
+  background: var(--branco);
+  padding: 1.5rem;
+}
+.dashboard-header .topo .container-menu {
+  display: flex;
+  align-items: center;
+}
+.dashboard-header .topo .logo {
+  height: 4rem;
+  justify-self: flex-start;
+  filter: var(--svg-verde);
+}
+.dashboard-header .topo .lista-menu {
+  margin: 0 3rem;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+.dashboard-header .topo .item-menu a {
+  font-size: 1rem;
+  font-family: 'sink-bold';
+  color: var(--cinza-escuro);
+}
+.dashboard-header .topo .form-pesquisar {
+  margin-left: auto;
+  width: 40rem;
+  flex-grow: 0;
+  background: var(--cinza-claro);
+}
+.dashboard-header .topo .form-pesquisar .bt-enviar img {
+  filter: var(--svg-verde);
+}
+.dashboard-header .topo .bt-carrinho {
+  position: relative;
+
+  margin: 0 2rem;
+}
+.dashboard-header .topo .bt-carrinho .icone {
+  height: 2.5rem;
+  filter: var(--svg-cinza-escuro);
+}
+.dashboard-header .topo .bt-carrinho span {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--verde);
+  font-family: 'sink-medium';
+  color: var(--branco);
+  width: 2rem;
+  height: 2rem;
+  border-radius: var(--radius-redondo);
+}
+.dashboard-header .topo .bt-usuario {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  font-family: 'sink-bold';
+  color: var(--branco);
+  max-width: 15rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-pequeno);
+  background-color: var(--laranja);
+}
+.dashboard-header .topo .bt-usuario::after {
+  content: url('../img/icone-seta.svg');
+  width: 0.8rem;
+}
+@media (max-width: 1400px) {
+}
+@media (max-width: 1199px) {
+  .dashboard-header .topo .form-pesquisar {
+    width: 30rem;
+  }
+}
+@media (max-width: 991px) {
+  .dashboard-header .topo .container-menu {
+    flex-wrap: wrap;
+  }
+  .dashboard-header .topo .form-pesquisar {
+    order: 5;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .dashboard-header .topo .lista-menu {
+    margin-left: auto;
+  }
+}
+@media (max-width: 767px) {
+  .dashboard-header .topo .bt-usuario {
+    display: none;
+  }
+  .dashboard-header .topo .bt-carrinho {
+    margin-left: auto;
+  }
+  .dashboard-header .topo .lista-menu {
+    width: 100%;
+    order: 3;
+    margin-top: 2rem;
+  }
+  .dashboard-header .topo .item-menu a {
+    background: var(--cinza-claro);
+    padding: 1rem 2rem;
+    border-radius: var(--radius-pequeno);
+  }
+}
+@media (max-width: 575px) {
+}
+@media (max-width: 400px) {
+}

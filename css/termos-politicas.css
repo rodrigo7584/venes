@@ -1,0 +1,56 @@
+.termos-politicas .topo {
+  background: var(--degrade-verdes);
+}
+.termos-politicas .topo .titulo-grande,
+.termos-politicas .topo .subtitulo {
+  color: var(--branco);
+  text-align: center;
+}
+.termos-politicas .container-termos-politicas .menu-termos-politicas {
+  list-style: none;
+  border-radius: var(--radius-pequeno);
+  border: 0.1rem solid var(--preto);
+  margin-bottom: 2rem;
+}
+.termos-politicas .container-termos-politicas .menu-termos-politicas li {
+  border-bottom: 0.1rem solid var(--preto);
+}
+.termos-politicas .container-termos-politicas .menu-termos-politicas li:last-child {
+  border-bottom: none;
+}
+.termos-politicas .container-termos-politicas .menu-termos-politicas li a {
+  padding: 1.3rem 2rem;
+  font-family: 'sink-regular';
+  color: var(--preto);
+  font-size: 1.2rem;
+  width: 100%;
+}
+.termos-politicas .container-termos-politicas .menu-termos-politicas li.ativo,
+.termos-politicas .container-termos-politicas .menu-termos-politicas li:hover {
+  background-color: var(--preto);
+}
+.termos-politicas .container-termos-politicas .menu-termos-politicas li.ativo a,
+.termos-politicas .container-termos-politicas .menu-termos-politicas li:hover a {
+  color: var(--branco);
+  font-family: 'sink-sbold';
+}
+.termos-politicas .container-termos-politicas .titulo {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.termos-politicas .container-termos-politicas .titulo-pequeno {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-family: 'sink-sbold';
+}
+.termos-politicas .container-termos-politicas p {
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+.termos-politicas .container-termos-politicas .lista-circulos li {
+  font-family: 'sink-regular';
+}
+.termos-politicas .container-termos-politicas .lista-circulos li::before {
+  background: var(--preto);
+  top: 0.7rem;
+}

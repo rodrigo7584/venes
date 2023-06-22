@@ -1,0 +1,112 @@
+.dashboard-pagamentos .pagamentos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow-y: scroll;
+}
+.dashboard-pagamentos .pagamentos .pagamento {
+  min-width: 70rem;
+}
+.dashboard-pagamentos .header-pagamento {
+  background-color: var(--cinza);
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-pagamentos .header-pagamento .bt-abrir {
+  font-family: 'sink-black';
+  font-size: 2.5rem;
+  line-height: 1;
+  padding: 1rem;
+}
+.dashboard-pagamentos .header-pagamento .descricao {
+  font-family: 'sink-sbold';
+  color: var(--preto);
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+.dashboard-pagamentos .conteudo-pagamento {
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.dashboard-pagamentos .tabela-pagamento {
+  border-collapse: collapse;
+  border-radius: 0.3rem;
+  border: 0.1rem solid var(--cinza);
+  padding: 2rem;
+  background: var(--branco);
+  width: 100%;
+}
+.dashboard-pagamentos .tabela-pagamento th,
+.dashboard-pagamentos .tabela-pagamento td {
+  padding: 1rem;
+}
+.dashboard-pagamentos .tabela-pagamento th {
+  font-family: 'sink-bold';
+  font-size: 1rem;
+  border-bottom: 0.1rem solid var(--cinza);
+  color: var(--preto);
+}
+.dashboard-pagamentos .tabela-pagamento td {
+  font-family: 'sink-regular';
+  font-size: 1rem;
+  border-bottom: 0.1rem solid var(--cinza);
+  color: var(--cinza-escuro);
+}
+.dashboard-pagamentos .tabela-pagamento .bt-detalhes-pagamento {
+  color: var(--branco);
+  background: var(--laranja);
+  border-radius: 0.2rem;
+}
+
+.dialog-modal-mais-detalhes-pagamento {
+  width: 65rem;
+}
+.dialog-modal-mais-detalhes-pagamento .dialog-content {
+  padding: 1rem 0;
+}
+.dialog-modal-mais-detalhes-pagamento .dialog-content .titulo {
+  font-size: 1.2rem;
+  position: relative;
+  font-family: 'sink-medium';
+}
+.dialog-modal-mais-detalhes-pagamento .dialog-content .titulo:before {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 5rem;
+  height: 0.1rem;
+  background: var(--amarelo);
+}
+.dialog-modal-mais-detalhes-pagamento .dialog-content .titulo-pequeno {
+  font-size: 1.2rem;
+  position: relative;
+  font-family: 'sink-sbold';
+  color: var(--cinza-escuro);
+  margin-bottom: 0;
+}
+.dialog-modal-mais-detalhes-pagamento .dialog-content p {
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+.dialog-modal-mais-detalhes-pagamento .bt-fechar {
+  margin-left: auto;
+  display: block;
+}
+@media (max-width: 1400px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 575px) {
+  .dialog-modal-mais-detalhes-pagamento .header-dialog-modal .modal-titulo {
+    font-size: 1.3rem !important;
+  }
+}
+@media (max-width: 400px) {
+}

@@ -1,0 +1,149 @@
+.curso-header .topo {
+  background: var(--degrade-verdes);
+  padding: 1.5rem;
+}
+.curso-header .topo .container-menu {
+  display: flex;
+  align-items: center;
+}
+.curso-header .topo .logo {
+  height: 4rem;
+  justify-self: flex-start;
+}
+.curso-header .topo .lista-menu {
+  margin: 0 3rem;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+.curso-header .topo .item-menu a {
+  font-size: 1rem;
+  font-family: 'sink-bold';
+  color: var(--branco);
+}
+.curso-header .topo .form-pesquisar {
+  margin-left: auto;
+  width: 40rem;
+  flex-grow: 0;
+}
+.curso-header .topo .bt-carrinho {
+  position: relative;
+
+  margin: 0 2rem;
+}
+.curso-header .topo .bt-carrinho .icone {
+  height: 2.5rem;
+}
+.curso-header .topo .bt-carrinho span {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--laranja);
+  font-family: 'sink-medium';
+  color: var(--branco);
+  width: 2rem;
+  height: 2rem;
+  border-radius: var(--radius-redondo);
+}
+.curso-header .topo .bt-usuario {
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  font-family: 'sink-bold';
+  color: var(--branco);
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: var(--radius-redondo);
+  background-color: var(--laranja);
+}
+.curso-header .topo .bt-usuario::after {
+  content: url('../img/icone-seta.svg');
+  width: 0.8rem;
+}
+.curso-header .submenu {
+  padding: 2rem 0;
+}
+.curso-header .submenu .lista-submenu {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+.curso-header .submenu .lista-submenu .submenu-item a {
+  display: flex;
+  align-items: center;
+  font-family: 'sink-regular';
+  font-size: 1.3rem;
+  color: var(--cinza-escuro);
+  gap: 0.5rem;
+}
+.curso-header .submenu .lista-submenu .submenu-item a .icone {
+  height: 2rem;
+  filter: var(--svg-cinza-escuro);
+}
+.curso-header .submenu .lista-submenu .submenu-item.ativo a,
+.curso-header .submenu .lista-submenu .submenu-item:hover a {
+  color: var(--preto);
+  font-family: 'sink-bold';
+}
+.curso-header .submenu .lista-submenu .submenu-item.ativo a .icone,
+.curso-header .submenu .lista-submenu .submenu-item:hover a .icone {
+  filter: var(--svg-verde);
+}
+.curso-header .voltar {
+  background-color: var(--laranja);
+  padding: 1.3rem;
+}
+.curso-header .voltar .bt-voltar {
+  padding: 0.5rem;
+  font-family: 'sink-regular';
+  font-size: 1.3rem;
+  color: var(--branco);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.curso-header .voltar .bt-voltar::before {
+  content: url(../img/icone-seta.svg);
+  width: 1.5rem;
+  transform: rotate(90deg);
+}
+@media (max-width: 1400px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+  .curso-header .topo .container-menu {
+    flex-wrap: wrap;
+  }
+  .curso-header .topo .lista-menu {
+    display: none;
+  }
+  .curso-header .topo .a-menu {
+    display: none;
+  }
+  .curso-header .topo .form-pesquisar {
+    order: 5;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .curso-header .topo .bt-carrinho {
+    margin-left: auto;
+  }
+  .curso-header .submenu {
+    padding: 1rem 0;
+  }
+  .curso-header .voltar {
+    padding: 0.3rem;
+  }
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 575px) {
+}
+@media (max-width: 400px) {
+}

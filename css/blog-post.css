@@ -1,0 +1,74 @@
+.blog-post .post .titulo-post {
+  font-size: 3.3rem;
+}
+.blog-post .post .thumb {
+  max-width: 100%;
+  height: 35rem;
+  overflow: hidden;
+  display: block;
+  margin: 2rem 0;
+}
+.blog-post .post .thumb img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+.blog-post .post .titulo {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.blog-post .post p {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+.blog-post .post .autor {
+  margin: 0 auto;
+  background: var(--cinza-claro);
+  width: fit-content;
+  padding: 3rem 6rem;
+  border-radius: var(--radius-medio);
+}
+.blog-post .post .autor span {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  font-family: 'sink-medium';
+  font-size: 1.3rem;
+}
+.blog-post .post .autor .foto-autor {
+  width: 15rem;
+  height: 15rem;
+  overflow: hidden;
+  display: block;
+  border-radius: 100%;
+  margin: 1rem 0;
+}
+.blog-post .post .autor .foto-autor img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+.blog-post .post .autor .nome-autora {
+  font-size: 2rem;
+  text-align: center;
+  max-width: 100%;
+}
+@media (max-width: 1400px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+  .blog-post .post .thumb {
+    height: 25rem;
+  }
+}
+@media (max-width: 575px) {
+  .blog-post .post .autor .foto-autor {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+@media (max-width: 400px) {
+}

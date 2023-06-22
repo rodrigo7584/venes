@@ -1,0 +1,96 @@
+.dashboard-meus-cursos .titulo{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.dashboard-meus-cursos .titulo-grande{
+  font-size: 2rem;
+  font-family: 'sink-black';
+  color: var(--preto);
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+.dashboard-meus-cursos .cursos{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 2rem;
+}
+.dashboard-meus-cursos .cursos .curso{
+  max-width: 100%;
+  border-radius: var(--radius-pequeno);
+  background: var(--branco);
+  box-shadow: var(--sombra);
+  overflow: hidden;
+}
+.dashboard-meus-cursos .cursos .curso .thumb{
+  max-width: 100%;
+  height: 15rem;
+  overflow: hidden;
+  display: block;
+}
+.dashboard-meus-cursos .cursos .curso .thumb img{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+.dashboard-meus-cursos .cursos .curso .informacao{
+  padding: 1.3rem;
+}
+.dashboard-meus-cursos .cursos .curso .informacao .nome-curso{
+  font-family: 'sink-bold';
+  font-size: 1.2rem;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+.dashboard-meus-cursos .cursos .curso .informacao .carga{
+  margin-top: 3rem;
+  font-family: 'sink-bold';
+  color: var(--cinza-escuro);
+  font-size: 1.1rem;
+}
+.dashboard-meus-cursos .cursos .curso .informacao .carga span{
+  font-family: 'sink-regular';
+}
+.dashboard-meus-cursos .cursos .curso .informacao  .sobre{
+  color: var(--cinza-escuro);
+  font-size: 1.1rem;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+.dashboard-meus-cursos .cursos .curso .bt-entrar{
+  width: 100%;
+}
+@media (max-width: 1400px) {
+}
+@media (max-width: 1199px) {
+  .dashboard-meus-cursos .cursos{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+@media (max-width: 991px) {
+  .dashboard-meus-cursos .cursos{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 575px) {
+  .dashboard-meus-cursos .cursos{
+    grid-template-columns: 100%;
+    justify-content: center;
+  }
+  .dashboard-meus-cursos .cursos{
+    max-width: 40rem;
+  }
+}
+@media (max-width: 400px) {
+} 

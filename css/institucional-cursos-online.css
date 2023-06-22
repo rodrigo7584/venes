@@ -1,0 +1,123 @@
+.institucional-cursos-online .topo {
+  background: var(--degrade-verdes);
+}
+.institucional-cursos-online .topo h1 {
+  color: var(--branco);
+}
+.institucional-cursos-online .topo .subtitulo {
+  color: var(--branco);
+}
+.institucional-cursos-online .filtros-mobile {
+  background: var(--degrade-verdes);
+}
+.institucional-cursos-online .filtros-mobile .titulo-pequeno {
+  text-align: center;
+  display: block;
+  color: var(--branco);
+}
+.institucional-cursos-online .filtros-mobile label {
+  display: block;
+  font-family: 'sink-medium';
+  color: var(--branco);
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+.institucional-cursos-online .filtros-mobile .bt-filtrar {
+  border-radius: var(--radius-pequeno);
+  padding: 0.5rem 2rem;
+  width: fit-content;
+  margin: 1rem 0 1rem auto;
+  font-family: 'sink-medium';
+  font-size: 1.1rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.institucional-cursos-online .filtros-mobile .bt-filtrar::before {
+  content: url('../img/icone-lupa.svg');
+  filter: var(--svg-branco);
+  width: 1.5rem;
+}
+.institucional-cursos-online .lista-cursos .titulo-menu {
+  font-family: 'sink-bold';
+  font-size: 1.3rem;
+  margin-bottom: 1.3rem;
+  color: var(--preto);
+}
+.institucional-cursos-online .lista-cursos .menu-categorias {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+.institucional-cursos-online .lista-cursos .menu-categorias li {
+  padding-bottom: 0.3rem;
+  border-bottom: 0.1rem dashed var(--cinza-escuro);
+  margin-bottom: 1.3rem;
+}
+.institucional-cursos-online .lista-cursos .menu-categorias li a {
+  font-family: 'sink-sbold';
+  color: var(--cinza-escuro);
+  font-size: 1.1rem;
+}
+.institucional-cursos-online .lista-cursos .nuvem-cargas {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.3rem;
+}
+.institucional-cursos-online .lista-cursos .nuvem-cargas li a {
+  width: 100%;
+  text-align: center;
+  background: var(--cinza);
+  border-radius: var(--radius-redondo);
+  padding: 0.2rem;
+  color: var(--cinza-escuro);
+  font-size: 1.2rem;
+}
+.institucional-cursos-online .lista-cursos .lista-cartoes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.institucional-cursos-online .lista-cursos .cartao-curso .bt-mais-informacao {
+  font-size: 1rem;
+}
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1199px) {
+  .institucional-cursos-online .lista-cursos .lista-cartoes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 991px) {
+  .institucional-cursos-online .lista-cursos .lista-cartoes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .institucional-cursos-online .lista-cursos .nuvem-cargas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .institucional-cursos-online .topo .titulo-grande,
+  .institucional-cursos-online .topo .subtitulo {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .institucional-cursos-online .lista-cursos .cartao-curso .foto-curso {
+    display: none;
+  }
+  .institucional-cursos-online .lista-cursos .lista-cartoes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .institucional-cursos-online .lista-cursos .cartao-curso .bt-mais-informacao {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 400px) {
+}

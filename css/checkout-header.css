@@ -1,0 +1,7 @@
+.header-checkout {
+  background: var(--degrade-verdes);
+  padding: 2rem 0rem;
+}
+.header-checkout .logo {
+  height: 5rem;
+}
