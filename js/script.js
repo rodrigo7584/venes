@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (botaoAcompanheProgresso) {
       const containerProgresso = document.querySelector('.curso .container-progresso')
       const tamanhoContainer = `${containerProgresso.scrollHeight}px`
-
+      console.log(tamanhoContainer)
       botaoAcompanheProgresso.addEventListener('click', () => {
         botaoAcompanheProgresso.classList.toggle('ativo')
 
@@ -202,6 +202,34 @@ function initMenuCurso() {
   }
 }
 initMenuCurso()
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   function initVideoaulas() {
+//     const modulos = document.querySelectorAll('.curso .conteudo-videoaulas .modulo')
+//     if (modulos.length) {
+//       modulos.forEach(modulo => {
+//         const botao = modulo.querySelector('.modulo-head')
+//         const containerVideoaula = modulo.querySelector('.container-modulo-conteudo')
+//         const tamanhoContainer = `${containerVideoaula.scrollHeight + 20}px`
+
+//         botao.addEventListener('click', () => {
+//           botao.classList.toggle('ativo')
+//           containerVideoaula.style.padding = '0'
+//           if (containerVideoaula.classList.contains('ativo')) {
+//             containerVideoaula.classList.remove('ativo')
+//             containerVideoaula.style.height = '0'
+//             containerVideoaula.style.padding = '0'
+//           } else {
+//             containerVideoaula.classList.add('ativo')
+//             containerVideoaula.style.height = tamanhoContainer
+//             containerVideoaula.style.padding = '1rem'
+//           }
+//         })
+//       })
+//     }
+//   }
+//   initVideoaulas()
+// })
 
 document.addEventListener('DOMContentLoaded', () => {
   function initVideoaulas() {

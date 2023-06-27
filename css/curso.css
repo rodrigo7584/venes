@@ -202,6 +202,7 @@
   transform: rotate(-180deg);
 }
 .curso .conteudo-videoaulas .modulos .container-modulo-conteudo {
+  height: 0;
   transition: 0.5s;
   overflow: hidden;
   display: grid;
