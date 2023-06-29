@@ -34,7 +34,9 @@ include './parts/header.php'
               <li><a href="./dashboard-cursos-online.php">dashboard cursos online</a></li>
               <li><a href="./dashboard-certificados.php">dashboard certificados</a></li>
               <li><a href="./dashboard-pagamentos.php">dashboard pagamentos</a></li>
-              <li><a href="./dashboard-pagamentos.php">dashboard pagamentos</a></li>
+              <li><a href="./dashboard-meus-cursos.php">dashboard meus cursos</a></li>
+              <li><a href="./dashboard-meu-perfil.php">dashboard meu perfil</a></li>
+              <li><a href="./dashboard-cursos-online.php">dashboard cursos online</a></li>
               <li><a href="./checkout-resumo.php">checkout resumo</a></li>
               <li><a href="./checkout-pagamento.php">checkout pagamento</a></li>
               <li><a href="./checkout-confirmar.php">checkout confirmar</a></li>
